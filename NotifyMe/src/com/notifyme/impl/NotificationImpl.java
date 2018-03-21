@@ -3,6 +3,7 @@ package com.notifyme.impl;
 import java.util.List;
 
 import com.notifyme.interfaces.NotificationClient;
+import com.notifyme.interfaces.NotificationDTO;
 
 public class NotificationImpl implements NotificationClient {
 

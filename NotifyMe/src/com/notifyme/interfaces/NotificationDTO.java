@@ -1,4 +1,4 @@
-package com.notifyme.impl;
+package com.notifyme.interfaces;
 
 public class NotificationDTO {
 	
