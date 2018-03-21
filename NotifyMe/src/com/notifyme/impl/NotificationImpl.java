@@ -6,6 +6,8 @@ import com.notifyme.interfaces.NotificationClient;
 import com.notifyme.interfaces.NotificationDTO;
 
 public class NotificationImpl implements NotificationClient {
+	
+	private static final String OK = "200_OK";
 
 	@Override
 	public String sendEmail(String from, String to, String subject) {
