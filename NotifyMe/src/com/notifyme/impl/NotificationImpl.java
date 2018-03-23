@@ -14,7 +14,7 @@ public class NotificationImpl implements NotificationClient {
 	public String sendEmail(String from, String to, String subject, String content) {
 		// TODO: Read the parameter values and construct the email
 		// and send the email to the respective sender
-		
+
 		// If the email was sent successfully, return ok,
 		// if not, send the error message
 		return OK;
