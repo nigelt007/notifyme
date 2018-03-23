@@ -12,6 +12,8 @@ public class NotificationDTO {
 
 	private String subject;
 
+	private String emailContent;
+
 	private String date;
 
 	private String time;
@@ -40,34 +42,48 @@ public class NotificationDTO {
 	 * @param time
 	 *            - the time of sending
 	 */
-	public NotificationDTO(String from, String to, String sub, String date, String time) {
+	public NotificationDTO(String from, String to, String sub, String date, String time, String content) {
 		this.fromAddress = from;
 		this.toAddress = to;
 		this.subject = sub;
 		this.date = date;
 		this.time = time;
+		this.emailContent = content;
 		this.isNotification = false;
 
 	}
 
 	/**
 	 * Constructor for Holding details related to mail notification
-	 * @param user - the username
-	 * @param header - notification header
-	 * @param body - notification body
-	 * @param date - date of notification
-	 * @param time - time of notification
-	 * @param channel - channel through which user is notified
+	 * 
+	 * @param user
+	 *            - the username
+	 * @param header
+	 *            - notification header
+	 * @param body
+	 *            - notification body
+	 * @param date
+	 *            - date of notification
+	 * @param time
+	 *            - time of notification
+	 * @param channel
+	 *            - channel through which user is notified
 	 */
-	public NotificationDTO(String user, String header, String body, String date, String time, String channel) {
+	public NotificationDTO(String user, String header, String body, String channel) {
 
 		this.user = user;
 		this.notificationHeader = header;
 		this.notificationBody = body;
-		this.time = time;
-		this.date = date;
 		this.channel = channel;
 		this.isNotification = true;
+	}
+
+	public String getEmailContent() {
+		return emailContent;
+	}
+
+	public void setEmailContent(String emailContent) {
+		this.emailContent = emailContent;
 	}
 
 	public String getFromAddress() {
