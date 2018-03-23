@@ -6,26 +6,59 @@ package com.notifyme.interfaces;
  */
 public class NotificationDTO {
 
+	/**
+	 * The from address
+	 */
 	private String fromAddress;
 
+	/**
+	 * The to address
+	 */
 	private String toAddress;
 
+	/**
+	 * The subject
+	 */
 	private String subject;
 
+	/**
+	 * The email content
+	 */
 	private String emailContent;
 
+	/**
+	 * The date of notification
+	 */
 	private String date;
 
+	/**
+	 * The time of notification
+	 */
 	private String time;
 
+	/**
+	 * The user to be notified
+	 */
 	private String user;
 
+	/**
+	 * Is it a notification or not.
+	 */
 	private boolean isNotification;
 
+	/**
+	 * The header details of the notification
+	 */
 	private String notificationHeader;
 
+	/**
+	 * The body of the notification
+	 */
 	private String notificationBody;
 
+	/**
+	 * The channel in which the the notification is to send.
+	 */
 	private String channel;
 
 	/**

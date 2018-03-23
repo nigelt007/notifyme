@@ -29,19 +29,30 @@ public class NotificationImpl implements NotificationClient {
 
 	@Override
 	public String notifyViaAllMediums(Map<String, List<String>> channelUserMap) {
-		// TODO Auto-generated method stub
+
+		if (channelUserMap != null) {
+			for (String channel : channelUserMap.keySet()) {
+
+				List<String> users = channelUserMap.get(channel);
+				for (String user : users) {
+
+					// TODO notify the users based on the channel
+				}
+
+			}
+		}
 		return null;
 	}
 
 	@Override
 	public String sendEmails(List<NotificationDTO> notifications) {
-		// TODO Auto-generated method stub
+		// TODO Read the notificationDTO details and send the mails
 		return null;
 	}
 
 	@Override
 	public String sendNotifications(List<NotificationDTO> notifications) {
-		// TODO Auto-generated method stub
+		// TODO Read the notification dto and notify the users of different channels
 		return null;
 	}
 
