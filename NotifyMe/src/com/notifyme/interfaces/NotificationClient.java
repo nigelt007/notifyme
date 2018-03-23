@@ -10,5 +10,7 @@ public interface NotificationClient {
 	
 	public String notifyViaAllMediums(String from, String subscriber);
 	
-	public String sendEmails(List<NotificationDTO> notifications);
+	public String sendEmails(List<NotificationDTO> emails);
+	
+	public String sendNotifications(List<NotificationDTO> notifications);
 }
